@@ -7,11 +7,9 @@ function Contact() {
         alert("Thanks for Contacting Us!")
     }    
     return (
-        <main className="h-screen flex flex-col justify-between items-center">
+        <main id="contact" className="min-h-screen flex flex-col justify-between items-center bg-black font-poppins">
             <h1 className="text-7xl mt-20 mb-10 font-bold bg-gradient-to-r from-purple-100 to-purple-500 bg-clip-text text-transparent">CONTACT</h1>
-
             <div>
-
             </div>
 
             <div className="flex items-center justify-between flex-row gap-4">
@@ -34,7 +32,7 @@ function Contact() {
                 <ArrowLeft className="ml-2 w-10 h-20 mt-90 text-purple-700" />
             </div>
 
-            <footer className="mt-10 p-7 h-auto bg-zinc-900 w-full text-center text-white">
+            <footer className="mt-10 p-7 h-auto w-4/5 bg-black text-center text-white border-t border-white/50">
                 &copy; All rights reserved. Made by team idk-css ❤️
             </footer>
         </main>

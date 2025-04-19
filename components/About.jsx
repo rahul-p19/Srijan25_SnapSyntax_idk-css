@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import Image from 'next/image'
 import {ArrowRight} from "lucide-react"
@@ -22,7 +23,8 @@ function About() {
       <p className="text-lg mt-4">Our team is passionate about website development</p>
       <p className="text-lg mt-4">Feel free to reach out to us!</p>
 
-      <button className="bg-purple-800 text-white font-bold py-2 px-6 mt-12 hover:bg-purple-600 transition duration-300 ease-in-out rounded-full">
+      <button onClick={()=> {
+        window.location.href="#contact";}} className="bg-purple-800 text-white font-bold py-2 px-6 mt-12 hover:bg-purple-600 transition duration-300 ease-in-out rounded-full">
         Contact Us
       </button>
     </div>

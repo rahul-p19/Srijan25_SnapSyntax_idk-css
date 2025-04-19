@@ -35,11 +35,9 @@ function Page() {
     <div className='flex flex-col w-full'>
       <Home />
       <About />
-
-      <Contact />
-
       <Skills skills={skills} />
       <Projects projects={projects}></Projects>
+      <Contact />
     </div>
   )
 }

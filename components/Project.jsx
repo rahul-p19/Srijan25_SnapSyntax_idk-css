@@ -2,8 +2,8 @@ import React from 'react'
 
 function Projects({projects}) {
   return (
-    <>
-    <h2 className="text-3xl font-bold mb-6 text-center bg-black">PROJECTS</h2>
+    <div className='flex flex-col bg-black font-poppins'>
+    <h2 className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 font-bold mb-6 text-center bg-black">PROJECTS</h2>
     <div className="relative bg-black text-white min-h-screen py-12 px-4">
     <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-purple-600 transform -translate-x-1/2"></div>
 
@@ -14,11 +14,11 @@ function Projects({projects}) {
       return (
         <div key={index} className={`relative flex ${isLeft ? 'justify-start' : 'justify-end'} w-full`}>
         <div className="relative w-full md:w-1/2">
-        <div className={`absolute -top-6 ${isLeft ? 'right-4' : 'left-4'} bg-purple-400 text-white px-3 py-1 text-sm font-bold rounded`}>
+        <div className={`absolute -top-6 ${isLeft ? 'right-4' : 'left-4'} text-white px-3 py-1 text-xl font-bold rounded`}>
         {project.title}
         </div>
 
-        <div className="border border-purple-600 rounded-lg p-4 bg-black shadow-lg m-4">
+        <div className=" rounded-lg p-4 bg-black shadow-lg m-4">
         <img src={project.imgLink} alt={project.title} className="w-full h-48 object-cover rounded mb-4" />
         <div className="text-right">
         <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded transition">
@@ -34,7 +34,7 @@ function Projects({projects}) {
     })}
     </div>
     </div>
-    </>
+    </div>
   )
 }
 

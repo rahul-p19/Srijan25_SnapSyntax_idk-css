@@ -17,7 +17,7 @@ function Page() {
   const projects = [
     {
       imgLink: "https://www.rahulpandey.tech/_next/image?url=%2Fprojects%2Fquiz-question.jpg&w=640&q=75",
-      title: "INFINITEE",
+      title: "INFINITIEEE",
       link: "https://example.com/1",
     },
     {

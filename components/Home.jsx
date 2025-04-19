@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar />
       <div className='grid grid-cols-4 place-items-center min-h-[60vh] w-11/12'>
         <div className='flex flex-col gap-y-12 pl-12'>
-          <h1 className='text-8xl'>John Doe</h1>
+          <h1 className='text-8xl text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-500 font-semibold'>John Doe</h1>
           <h3 className='text-xl'>I'm John Doe, a fullstack web developer <br /> and AI enthusiast.</h3>
         </div>
         <div className='h-full col-span-2 flex flex-col justify-end pb-5 z-10'>

@@ -2,7 +2,7 @@ import React from 'react'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
-
+import Contact from '@/components/Contact'
 function Page() {
   const skills = [
     { tech: "test1 ", rating: 2 },
@@ -16,6 +16,9 @@ function Page() {
     <div className='flex flex-col w-full'>
       <Home />
       <About />
+
+      <Contact />
+
       <Skills skills={skills} />
     </div>
   )

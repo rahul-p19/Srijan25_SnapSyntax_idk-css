@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         </div>
       </div>
-        <img src='/bubbles.png' className='w-2/5 h-auto aspect-square object-cover absolute -bottom-20 right-20' />
+        <img src='/bubbles.png' className='w-2/5 h-auto aspect-square rounded-full border-l-3 border-l-purple-700/60 object-cover absolute -bottom-20 right-15' />
         <div className={`h-72 -top-10 -right-20 aspect-square rounded-full bg-purple-600/20 blur-2xl border text-transparent absolute`}></div>
         <div className={`h-72 top-10 -right-36 aspect-square rounded-full bg-pink-700/20 blur-2xl border text-transparent absolute`}></div>
     </div>

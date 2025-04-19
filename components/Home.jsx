@@ -7,6 +7,7 @@ function Navbar(){
     <nav className='bg-gray-300/40 flex items-center justify-between rounded-full px-6 py-2 w-4/5 z-10'>
       <h2>John Doe</h2>
       <div className='flex gap-16'>
+        <a href='/' className='hover:border-b hover:border-purple-800'>Home</a>
         <a href='#about'>About</a>
         <a href='#skills'>Skills</a>
         <a href='#projecs'>Projects</a>
@@ -20,7 +21,7 @@ function Navbar(){
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-y-16 items-center w-full min-h-screen py-10 bg-black relative overflow-clip'>
+    <div className='flex flex-col gap-y-16 items-center w-full min-h-screen py-10 bg-black relative overflow-clip font-poppins'>
       <Navbar />
       <div className='grid grid-cols-4 place-items-center min-h-[60vh] w-11/12'>
         <div className='flex flex-col gap-y-12 pl-12'>

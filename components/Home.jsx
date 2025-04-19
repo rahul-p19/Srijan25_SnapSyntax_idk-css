@@ -5,12 +5,12 @@ import Spotlight from "./Spotlight"
 function Navbar(){
   return(
     <nav className='bg-gray-300/40 flex items-center justify-between rounded-full px-6 py-2 w-4/5 z-10'>
-      <h2>John Doe</h2>
+      <h2 className='text-2xl'>John Doe</h2>
       <div className='flex gap-16'>
-        <a href='/' className='hover:border-b hover:border-purple-800'>Home</a>
-        <a href='#about'>About</a>
-        <a href='#skills'>Skills</a>
-        <a href='#projecs'>Projects</a>
+        <a href='/' className='border-3 border-transparent hover:border-b-3 hover:border-b-purple-900'>Home</a>
+        <a href='#about' className='border-3 border-transparent hover:border-b-3 hover:border-b-purple-900'>About</a>
+        <a href='#skills' className='border-3 border-transparent hover:border-b-3 hover:border-b-purple-900'>Skills</a>
+        <a href='#projecs' className='border-3 border-transparent hover:border-b-3 hover:border-b-purple-900'>Projects</a>
       </div>
       <a href='#contact' className='rounded-full py-2 px-3 bg-black/80'>
         Contact Me
@@ -41,18 +41,18 @@ export default function Home() {
         </div>
         </div>
         <div className='flex justify-end w-full'>
-        <div className='flex flex-col gap-y-6'>
-          <a href='https://github.com/johndoe' className='text-white'>
-            <Github color='white' />
+        <div className='flex flex-col gap-y-6 transition-colors duration-150 z-10'>
+          <a href='https://github.com/johndoe' className='text-white hover:text-gray-400'>
+            <Github />
           </a>
-          <a href='https://instagram.com' className='text-white'>
-            <Instagram color='white' />
+          <a href='https://instagram.com' className='text-white hover:text-gray-400'>
+            <Instagram />
           </a>
-          <a href='https://linkedin.com/johndoe' className='text-white'>
-            <Linkedin color='white' />
+          <a href='https://linkedin.com/johndoe' className='text-white hover:text-gray-400'>
+            <Linkedin />
           </a>
-          <a href='https://figma.com/' className='text-white'>
-            <Figma color='white' />
+          <a href='https://figma.com/' className='text-white hover:text-gray-400'>
+            <Figma />
           </a>
         </div>
         </div>

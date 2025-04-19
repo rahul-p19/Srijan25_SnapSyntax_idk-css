@@ -4,7 +4,7 @@ import {ArrowRight} from "lucide-react"
 
 function About() {
   return (
-    <main className="min-h-screen flex flex-col items-center ">
+    <main id='about' className="min-h-screen flex flex-col items-center bg-black pb-24 font-poppins relative">
       <div className='flex flex-row items-center  mt-35 mb-25'>
   <h1 className="text-7xl font-bold bg-gradient-to-r from-purple-100 to-purple-500 bg-clip-text text-transparent">ABOUT US</h1>
     <ArrowRight className="text-purple-500 ml-6 w-20 h-17 animate-bounce" />
@@ -22,11 +22,13 @@ function About() {
       <p className="text-lg mt-4">Our team is passionate about website development</p>
       <p className="text-lg mt-4">Feel free to reach out to us!</p>
 
-      <button className="bg-purple-800 text-white font-bold py-2 px-6 mt-6 hover:bg-purple-600 transition duration-300 ease-in-out rounded-full">
+      <button className="bg-purple-800 text-white font-bold py-2 px-6 mt-12 hover:bg-purple-600 transition duration-300 ease-in-out rounded-full">
         Contact Us
       </button>
     </div>
   </div>
+  <div className={`h-24 bottom-2 left-10 aspect-square rounded-full bg-purple-700/20 blur-2xl border text-transparent absolute`}></div>
+  <div className={`h-52 top-12 right-0 aspect-square rounded-full bg-pink-700/20 blur-2xl border text-transparent absolute`}></div>
 </main>
 
   )

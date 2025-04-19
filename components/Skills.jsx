@@ -31,7 +31,7 @@ function Skills({skills}) {
     </div>
     </div>
     </div>
-
+    </div>
   )
 };
 
